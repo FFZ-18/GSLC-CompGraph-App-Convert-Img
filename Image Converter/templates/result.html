@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        img {
+            max-width: 45%;
+            height: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            font-size: 24px;
+        }
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Converted Image</h1>
+        <div class="image-container">
+            <div>
+                <h2>Original</h2>
+                <img src="{{ original }}" alt="Original Image">
+            </div>
+            <div>
+                <h2>Edited</h2>
+                <img src="{{ edited }}" alt="Edited Image">
+            </div>
+        </div>
+        <a href="/">Back to Upload</a>
+    </div>
+</body>
+</html>
